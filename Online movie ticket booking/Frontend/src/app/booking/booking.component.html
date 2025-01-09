@@ -1,0 +1,10 @@
+<app-navbar></app-navbar>
+<div class="movie-selection-container">
+
+  <br><br>
+  <div *ngFor="let movie of movies" class="movie-card">
+    <h3>{{ movie.name }}</h3>
+    <p>{{ movie.genre }}</p>
+    <button (click)="selectMovie(movie.id)">Select Movie</button>
+  </div>
+</div>

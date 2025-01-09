@@ -1,0 +1,88 @@
+*{
+  background-color: rgb(199, 243,191);
+}
+
+.seat-selection {
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h4 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.seat {
+  margin: 5px;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+button:hover:not(:disabled) {
+  background-color: #e0e0e0;
+}
+
+button.selected {
+  background-color: #4caf50;
+  color: white;
+  border-color: #45a049;
+} 
+
+button:active {
+   background-color: #3e8e41; 
+}
+
+button:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+.new-button {
+  margin-top: 30px;
+  text-align: center;
+}
+.new-button button {
+  width: 100%; 
+  max-width: 300px;
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.new-button button:hover {
+  background-color:rgb(24, 74, 24);
+}
+

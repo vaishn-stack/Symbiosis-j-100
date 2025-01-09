@@ -1,0 +1,21 @@
+<!-- <p>seat-selection works!</p>-->
+<app-navbar></app-navbar>
+<div class="seat-selection">
+ 
+  <h4>Select Your Seats</h4>
+  <div *ngFor="let row of seats; let rowIndex = index" class="row">
+    <div *ngFor="let seat of row; let colIndex = index" class="seat">
+      <button
+        [class.selected]="selectedSeats.includes(seat.number)"
+        [disabled]="seat.isBooked"
+        (click)="toggleSeatSelection(seat.number)"
+      >
+        {{ seat.number }}
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="new-button">
+  <button (click)="confirmBooking()">Confirm Booking</button>
+</div>

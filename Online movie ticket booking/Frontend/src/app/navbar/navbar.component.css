@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  /* Main Container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Header Section */
+  .header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  /* Header Logo */
+  .header h1 {
+    margin: 0;
+  }
+  
+  /* Navigation Buttons */
+  .navigation {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .nav-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Logout Button */
+  .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Welcome Section */
+  .content {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .content h2 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .content p {
+    color: #555;
+    font-size: 18px;
+  }

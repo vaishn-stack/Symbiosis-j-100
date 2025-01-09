@@ -1,0 +1,20 @@
+<app-navbar></app-navbar>
+<div class="confirmation-container">
+  
+  <h1>Booking Confirmation</h1>
+
+  <div class="booking-details" *ngIf="bookingDetails?.movie">
+    <p><strong>Movie:</strong> {{ bookingDetails.movie?.name }}</p>
+    <p><strong>Seats:</strong> {{ bookingDetails.seats?.join(', ') }}</p>
+    <p><strong>Date:</strong> {{ bookingDetails.date }}</p>
+  </div>
+
+  <div class="qr-code-section" *ngIf="qrCodeDataUrl">
+    <button (click)="downloadQRCode()" class="btn btn-download">Download QR Code</button><br>
+  </div>
+
+  <div class="buttons">
+    <button (click)="resetBooking()" class="btn btn-reset">Reset Booking</button><br>
+    <button (click)="downloadPDF()" class="btn btn-download">Download PDF</button>
+  </div>
+</div>

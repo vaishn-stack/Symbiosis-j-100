@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div class="ticket-container">
+  
+  <h1>Booking Confirmation</h1>
+  <p *ngIf="movie">Movie: {{ movie.name }}</p>
+  <p *ngIf="selectedSeats && selectedSeats.length > 0">
+    Seats: {{ selectedSeats.join(', ') }}
+  </p>
+  <button (click)="proceedToConfirmation()">Proceed to Confirmation</button>
+  <br>
+  <button (click)="navigateToBooking()">Back to Booking</button>
+</div>
